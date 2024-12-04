@@ -1,0 +1,117 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #282828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+button.tab {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button.tab.active {
+    background-color: #ff0000;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-item {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Sayfa genel stili */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Fotoğrafı ortalamak için konteyner */
+.container {
+    display: flex;             /* Flexbox kullanarak içeriği hizalar */
+    justify-content: center;   /* Yatayda ortalar */
+    align-items: center;       /* Dikeyde ortalar */
+    height: 100vh;             /* Sayfanın tamamını kaplar (yükseklik) */
+}
+
+/* Fotoğrafın stilini ayarlayalım */
+img {
+    max-width: 100%;   /* Fotoğrafın ekran boyutuna göre ölçeklenmesini sağlar */
+    height: auto;      /* Fotoğrafın orantısını korur */
+}
+/* Sayfa genel stili */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Fotoğrafı ortalamak için konteyner */
+.container {
+    display: flex;             /* Flexbox kullanarak içeriği hizalar */
+    justify-content: center;   /* Yatayda ortalar */
+    align-items:center;       /* Dikeyde ortalar */
+    height: 100vh;             /* Sayfanın tamamını kaplar (yükseklik) */
+}
+
+/* Fotoğrafın stilini ayarlayalım */
+img {
+    max-width: 5%;   /* Fotoğrafın ekran boyutuna göre ölçeklenmesini sağlar */
+    height: auto;      /* Fotoğrafın orantısını korur */
+    margin-top: -1350px; /* Fotoğrafı biraz yukarı kaydırır */
+    margin-right: 500px;
+}
