@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAHS-YOUTUBE</title>
+    <link rel="stylesheet" href="cahs.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cəalhəsa Youtube kanalı</h1>
+        </div>
+        <nav>
+            <button class="tab" onclick="openTab(event, 'videos')">Videolar</button>
+            <button class="tab" onclick="openTab(event, 'shorts')">Shorts</button>
+            <button class="tab" onclick="openTab(event, 'playlists')">Oynatma Listeleri</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Videolar -->
+        <section id="videos" class="content-section active">
+            <h2>Videolar</h2>
+            <div class="video-container">
+                <!-- YouTube Embed Kodları -->
+                <div class="video-item">
+                    <a href="https://www.youtube.com/watch?v=w6ZIokvhhZI" target="_blank">Videoyu izləmək üçün tıkla</a>
+                    <p>Ən son video</p>
+                </div>
+                <div class="video-item">
+                    <a href="https://youtu.be/2ZHlMpin2Y8" target="_blank">Videoyu izləmək üçün tıkla</a>
+                    <p>Ən populyar video</p>
+                </div>
+                <!-- Diğer videoları ekleyebilirsiniz -->
+            </div>
+        </section>
+
+        <!-- Shorts -->
+        <section id="shorts" class="content-section">
+            <h2>Shorts</h2>
+            <div class="video-container">
+                <!-- YouTube Embed Kodları -->
+                <div class="video-item">
+                    <a href="https://www.youtube.com/shorts/k7eQzlfwd74" target="_blank">Shortsu izləmək üçün tıkla</a>
+                    <p>Ən populyar shorts</p>
+                </div>
+                <div class="video-item">
+                    <a href="https://www.youtube.com/shorts/wSBEFHH-ioY" target="_blank">Shortsu izləmək üçün tıkla</a>
+                    <p>Ən son shorts</p>
+                </div>
+                <!-- Diğer shorts'ları ekleyebilirsiniz -->
+            </div>
+        </section>
+
+        <!-- Oynatma Listeleri -->
+        <section id="playlists" class="content-section">
+            <h2>Oynatma Listeleri</h2>
+            <div class="video-container">
+                <div class="video-item">
+                    <h3>Brawl stars</h3>
+                    <a href="https://www.youtube.com/playlist?list=PLDbSfANJA6r86cItBM6i7HvaARrs3rteW" target="_blank">Oynatma Listesini Görüntüle</a>
+                </div>
+                <div class="video-item">
+                    <h3>Clash Royale</h3>
+                    <a href="https://www.youtube.com/playlist?list=PLDbSfANJA6r_0cfwfk2n-2XLUSOYpRdio" target="_blank">Oynatma Listesini Görüntüle</a>
+                </div>
+                <!-- Diğer oynatma listelerini ekleyebilirsiniz -->
+            </div>
+        </section>
+    </main>
+
+    
+    <script>
+        // Sekme geçişi için basit bir JavaScript fonksiyonu (isteğe bağlı)
+        function openTab(evt, sectionId) {
+            var i, contentSections, tabs;
+            contentSections = document.getElementsByClassName("content-section");
+            for (i = 0; i < contentSections.length; i++) {
+                contentSections[i].classList.remove("active");
+            }
+            tabs = document.getElementsByClassName("tab");
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            document.getElementById(sectionId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Ortada</title>
+    <link rel="stylesheet" href="cahs.css">
+</head>
+<body>
+    <div class="container">
+        <img src="1.jpg" alt="Cəalhəsa" />
+    </div>
+</body>
+</html>
+
